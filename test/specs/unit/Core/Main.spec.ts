@@ -15,4 +15,10 @@ describe('Main class', () => {
       done();
     });
   });
+
+  it('should repeat 3times', (done) => {
+    let hahaha = sot.three_times('ha');
+    expect(hahaha).to.equal('hahaha');
+    done();
+  });
 });

@@ -1,3 +1,5 @@
+var webpack = require('webpack');
+
 module.exports = {
   output: {
     path: './dist/',
@@ -28,5 +30,12 @@ module.exports = {
     compilerOptions: {
       declaration: false
     }
-  }
+  },
+  plugins: [
+    new webpack.ProvidePlugin({
+      Promise : 'es6-promise-promise',
+      _ : 'lodash',
+    })
+  ]
+
 };

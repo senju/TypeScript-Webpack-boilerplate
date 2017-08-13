@@ -6,7 +6,8 @@
     "sourceMap": false,
     "inlineSourceMap": true,
     "declaration": true,
-    "outDir": "dist"
+    "outDir": "dist",
+    "lib": ["dom", "es6", "scripthost"]
   },
   "exclude": [
     "node_modules",
